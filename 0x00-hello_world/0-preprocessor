@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall $CFILE -O c
+gcc -Wall export $CFILE -O c

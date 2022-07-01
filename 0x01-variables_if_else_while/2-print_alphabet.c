@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 
 /**
 * main - Entry point
@@ -8,14 +7,10 @@
 */
 int main(void)
 {
-int n;
-
-srand(time(0));
-n = rand() - RAND_MAX / 2;
 char c;
 for (c = 'a'; c <= 'z'; ++c)
 {
-putchar(c);
+putchar (c);
 }
 return (0);
 }

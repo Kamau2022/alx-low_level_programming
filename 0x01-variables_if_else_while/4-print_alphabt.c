@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 /**
-*Main - Entry point
+*main - Entry point
+*
+*Description: 'the program prints alphabets with exception of e and q'
 *
 *Return: Always 0 (Success)
 */

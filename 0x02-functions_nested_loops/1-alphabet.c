@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
-*main - Entry point
+*print_alphabet - Entry point
 *
-*Descrption: 'This program prints alphabet in lowercase'
-*
-*Return: Always 0 (Success)
+*Description: 'prints the lower case alphabets'
 */
 
 void print_alphabet(void)

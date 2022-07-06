@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
-*add(int,int) - Entry point
-*@int: An input integer
-*Description: The function adds two integers and returns result
-Return: result
+*add - Entry point
+*@a: An integer a
+*@b: An integer b
+*Description: This function adds two integers and returns result
+*Return: result
 */
 
-int add(inta, intb)
+int add(int a, int b)
 {
-int a;
-int b;
-int result;
-result = a + b;
-return (result);
+return (a + b);
 }
 
 

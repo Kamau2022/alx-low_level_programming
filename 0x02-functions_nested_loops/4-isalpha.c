@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-_isalpha - Entry point
-@c: An input character
-Description: The program checks for alphabetic character
-Return: 1 if c is a letter or 0 if a digit
+*_isalpha - Entry point
+*@c: An input character
+*Description: The program checks for alphabetic character
+*Return: 1 if c is a letter or 0 if a digit
 */
 
 int _isalpha(int c)

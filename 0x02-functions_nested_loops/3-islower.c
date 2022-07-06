@@ -7,13 +7,12 @@
 
 int _islower(int c)
 {
-char h = 'c';
-if (_islower (h))
+char h;
+int lower =0;
+for (h = 'a'; h <= 'z'; ++h)
 {
-return (c);
+if (h == c)
+lower = 1;
 }
-else
-{
-return(0);
-}
+return (lower);
 }

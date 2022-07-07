@@ -13,10 +13,10 @@ printf("Infinite loop incoming :(\n");
 
 i = 0;
 
-while (i < 10)
-{
-putchar(i); /* causes the output to go into an infinite loop */
-}
+/*while (i < 10)*/
+/*{*/
+/*putchar(i);*/
+/*}*/
 
 printf("Infinite loop avoided! \\o/\n");
 

@@ -8,14 +8,22 @@
 
 int _isupper(int c)
 {
-	int i;
 
-	int upper = 0;
+	int upper;
 
-	for (i = 'A'; i <= 'Z'; ++i)
+	if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= 0))
 	{
-		if (c <= 'Z')
+		upper = 0;
+	}
+	
+	else if (c >= 'A' && c<= 'z')
+	{
 		upper = 1;
+	}
+	
+	else
+	{
+		upper = 0;
 	}
 
 	return (upper);

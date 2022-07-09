@@ -19,7 +19,7 @@ int _isupper(int c)
 	{
 		upper = 1;
 	}
-	else if (c <0 && c >= 0)
+	else if (c >= '0' && c < '9')
 		upper = 0;
 	else
 	{

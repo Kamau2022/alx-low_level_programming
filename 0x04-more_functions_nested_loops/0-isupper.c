@@ -11,16 +11,14 @@ int _isupper(int c)
 
 	int upper;
 
-	if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= 0))
+	if ((c >= 'a' && c <= 'z') || (c >= 0 && c < 0))
 	{
 		upper = 0;
 	}
-	
-	else if (c >= 'A' && c<= 'z')
+	else if (c >= 'A' && c <= 'z')
 	{
 		upper = 1;
 	}
-	
 	else
 	{
 		upper = 0;

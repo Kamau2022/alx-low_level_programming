@@ -8,13 +8,14 @@
 
 int _isdigit(int c)
 {
-	int digit, k = 48, j = 33, l = 58;
+	int digit, k = 48;
+	char j = 33, l = 58;
 
 	if (c >= k && c <= 57)
 	{
 		digit = 1;
 	}
-	if ((c >= j && c <= '47') || (c >= l && c <= '126'))
+	if ((c >= j && c <= 47) || (c >= l && c <= 126))
 	{
 		digit = 0;
 	}

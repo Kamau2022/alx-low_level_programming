@@ -9,13 +9,13 @@
 int _isdigit(int c)
 {
 	int digit, k = 0;
-	char j = 33, l = 58;
+	char j = 32, l = 58;
 
 	if (c >= k && c <= '9')
 	{
 		digit = 1;
 	}
-	else if ((c >= j && c <= 47) || (c >= l && c <= 126))
+	else if ((c >= j && c <= 47) || (c >= l && c < 127))
 	{
 		digit = 0;
 	}

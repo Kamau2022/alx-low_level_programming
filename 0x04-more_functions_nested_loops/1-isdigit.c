@@ -3,18 +3,18 @@
 /**
 *_isdigit - checks for a digit
 *@c: An input
-*Return: 1 if it is a digit and 0 if alphabet
+*Return: 1 if a digit and 0 otherwise
 */
 
 int _isdigit(int c)
 {
-	int digit;
+	int digit, k = 0;
 
-	if (c >= '0' && c <= '9')
+	if (c >= k && c <= '9')
 	{
 		digit = 1;
 	}
-	else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	else
 	{
 		digit = 0;
 	}

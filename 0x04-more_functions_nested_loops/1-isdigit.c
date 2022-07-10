@@ -10,7 +10,7 @@ int _isdigit(int c)
 {
 	int digit, k = 0, j = 'a', i = 'A';
 
-	if (c >= k && c <= '9')
+	if (c >= k)
 	{
 		digit = 1;
 	}

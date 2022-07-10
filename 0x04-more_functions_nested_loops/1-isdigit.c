@@ -8,21 +8,13 @@
 
 int _isdigit(int c)
 {
-	int digit, k = 0, j = 'a', i = 'A';
+	int digit, k = 0;
 
-	if (c >= k)
+	if (c >= k && c <= 9)
 	{
 		digit = 1;
 	}
-	else if (c >= i && c <= 'z')
-	{
-		digit = 0;
-	}
-	else if (c >= j && c <= 'Z')
-	{
-		digit = 0;
-	}
-	else
+	else 
 	{
 		digit = 0;
 	}

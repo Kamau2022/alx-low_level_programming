@@ -15,7 +15,7 @@ int _isdigit(int c)
 	{
 		digit = 1;
 	}
-	if ((c >= j && c <= 47) || (c >= l && c <= 126))
+	else if ((c >= j && c <= 47) || (c >= l && c <= 126))
 	{
 		digit = 0;
 	}

@@ -10,16 +10,14 @@ int _isdigit(int c)
 {
 	int digit;
 	char k = '0';
-	
 
 	if (c >= k && c <= '9')
 	{
 		digit = 1;
 	}
-	else 
+	else
 	{
 		digit = 0;
 	}
 	return (digit);
 }
-

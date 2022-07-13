@@ -5,7 +5,7 @@
 /**
 *_strncat - a function that concatenate strings
 *@dest: a character input
-*@char: a character input
+*@src: a character input
 *@n: an integer input
 *Return: a pointer
 */

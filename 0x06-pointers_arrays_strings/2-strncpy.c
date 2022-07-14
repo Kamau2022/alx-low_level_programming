@@ -5,6 +5,7 @@
 *_strncpy - a function that copies a string
 *@dest: a destination string
 *@src: a source string
+*@n: an integer input
 *Return: a character value
 */
 

@@ -18,12 +18,10 @@ char *_memset(char *s, char b, unsigned int n)
 	while (i <= n)
 	{
 	++i;
+	}
 	if (i == n)
 	{
-	break;
-	}
 	_memset(c, k, n);
 	}
 	return (c);
 }
-

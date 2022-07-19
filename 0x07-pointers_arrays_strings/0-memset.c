@@ -6,6 +6,7 @@
 *@s: address of the memory to print
 *@b: value to be set
 *@n: size of memory to print
+*Return: a pointer to memory filled
 */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -17,6 +18,4 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
-	
 	return (s);
-}

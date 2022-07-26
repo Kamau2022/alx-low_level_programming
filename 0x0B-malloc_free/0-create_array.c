@@ -11,9 +11,9 @@
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
-	i = 0;
+	unsigned int i = 0;
 	char *k;
+
 	k = malloc(size * sizeof(char));
 
 	if (size == 0)
@@ -22,12 +22,11 @@ char *create_array(unsigned int size, char c)
 	}
 	if (k == NULL)
 	{
-	return (NULL);;
+	return (NULL);
 	}
 	while (i < size)
 	{
 	k[i] = c;
-	_putchar(k[i]);
 	++i;
 	}
 	return (k);

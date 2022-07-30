@@ -10,20 +10,14 @@
 
 void print_rev(char *s)
 {
-	int l, i;
-	char *begin, *end, ch;
-	l = strlen (s);
-	begin = s;
-	end = s;
+	int l;
 
-	for (i = 0; i < l - 1; i++)
-		end++;
-	for (i = 0; i < l / 2; i++)
+	l = strlen(s) - 1;
+
+	while (l >= 0)
 	{
-		ch = *end;
-		*end = *begin;
-		*begin = ch;
-		begin++;
-		end--;
+	_putchar(s[l]);
+	l--;
 	}
+	_putchar('\n');
 }

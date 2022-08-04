@@ -24,9 +24,8 @@ sum = sum + x;
 }
 if (n == 0)
 {
-return (0);
+sum = 0;
 }
-else
 return (sum);
 va_end(arg);
 }

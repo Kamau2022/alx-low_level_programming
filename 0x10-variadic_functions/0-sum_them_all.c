@@ -15,16 +15,18 @@ unsigned int i;
 va_start(arg, n);
 sum = 0;
 i = 0;
-if (n == 0)
-{
-return (0);
-}
+
 while (i < n)
 {
 int x = va_arg(arg, int);
 sum = sum + x;
 ++i;
 }
+if (n == 0)
+{
+return (0);
+}
+else
 return (sum);
 va_end(arg);
 }

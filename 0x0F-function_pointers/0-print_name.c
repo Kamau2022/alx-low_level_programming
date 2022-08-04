@@ -6,7 +6,7 @@ void print_name(char *name, void(*f)(char*))
 	int i, l;
 	i = 0;
 	l = strlen(name);
-	
+	(*f) (name);	
 
 	for (i = 0; i < l; ++i)
 	{

@@ -21,6 +21,8 @@ for (i = 0; i < n; ++i)
 char *s = va_arg(arg, char *);
 if (s != NULL)
 printf("%s", s);
+else
+printf("(nil)");
 if (c != NULL && i < n - 1)
 printf("%s", c);
 }

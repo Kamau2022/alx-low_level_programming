@@ -27,10 +27,11 @@ list_t *new;
 list_t *temp;
 int length = _strlen(str);
 new = malloc(sizeof(list_t));
-new->str = strdup(str);
-new->next = NULL;
 if (new == NULL)
 return (NULL);
+new->str = strdup(str);
+new->next = NULL;
+
 if (*head == NULL)
 *head = new;
 else

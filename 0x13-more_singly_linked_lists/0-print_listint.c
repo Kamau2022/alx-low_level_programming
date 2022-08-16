@@ -10,9 +10,16 @@
 size_t print_listint(const listint_t *h)
 {
 unsigned int nodes = 0;
-while (h != NULL)
+while (h)
+{
+if (h->n == 0)
+{
+printf("(nil)\n");
+}
+else
 {
 printf("%d \n", h->n);
+}
 h = h->next;
 nodes++;
 }

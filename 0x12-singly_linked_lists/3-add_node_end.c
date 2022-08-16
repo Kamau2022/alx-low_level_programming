@@ -29,6 +29,8 @@ int length = _strlen(str);
 new = malloc(sizeof(list_t));
 new->str = strdup(str);
 new->next = NULL;
+if (new == NULL)
+return (NULL);
 if (*head == NULL)
 *head = new;
 else
@@ -41,5 +43,6 @@ temp = temp->next;
 temp->next = new;
 }
 new->len = length;
+
 return (new);
 }

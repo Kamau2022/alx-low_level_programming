@@ -18,7 +18,7 @@ k = (*head)->n;
 free(temp);
 return (k);
 }
-else 
+else
 {
 *head = NULL;
 }

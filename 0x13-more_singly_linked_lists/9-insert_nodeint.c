@@ -33,13 +33,13 @@ return (newnode);
 if (*head == NULL)
 {
 *head = newnode;
-newnode->n = n;
 newnode->next = NULL;
+newnode->n = n;
 return (newnode);
 }
+temp = *head;
 while (i < idx)
 {
-temp = *head;
 temp = temp->next;
 i++;
 }

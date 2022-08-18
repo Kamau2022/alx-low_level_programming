@@ -15,7 +15,7 @@ listint_t *newnode;
 listint_t *temp;
 unsigned int i = 1;
 newnode = malloc(sizeof(listint_t));
-if (head == NULL)
+if (head == NULL && idx != 0)
 {
 return (NULL);
 }

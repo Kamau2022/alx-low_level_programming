@@ -22,6 +22,8 @@ if (fd == -1)
 	return (0);
 if (fd != -1)
 {
+write(fd, filename, sizeof(filename));
+lseek(fd, 0, SEEK_SET);
 read(fd, buffer, letters);
 buffer[letters] = '\0';
 close(fd);

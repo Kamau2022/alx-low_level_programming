@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include<fcntl.h>
@@ -14,18 +15,19 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-char buffer[2024];
-fd = open("filename", O_RDONLY);
+char buffer[100000];
+fd = open("filename", O_RDWR);
 if (filename == NULL)
 	return (0);
 if (fd == -1)
 	return (0);
 if (fd != -1)
 {
-write(fd, filename, sizeof(filename));
+letters = lseek(fd, 0, SEEK_END);
 lseek(fd, 0, SEEK_SET);
 read(fd, buffer, letters);
 buffer[letters] = '\0';
+write(fd, filename, letters);
 close(fd);
 }
 return (0);

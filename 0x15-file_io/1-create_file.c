@@ -1,0 +1,34 @@
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<unistd.h>
+
+/**
+*create_file - creates a file
+*
+*@filename: file to be created
+*@text_content: string to write to the file
+*
+*Return: 1 or -1
+*/
+
+int create_file(const char *filename, char *text_content)
+{
+int fd;
+int i;
+
+fd = open("filename", O_WRONLY | O_CREAT | O_TRUNC);
+if (filename == NULL)
+	return (-1);
+if (text_content == NULL)
+{
+creat("filename", O_WRONLY);
+	return (1);
+}
+else if (text_content != NULL && filename != NULL)
+for (i = 0; text_content[i] == '\0'; i++)
+{
+write(fd, 0, SEEK_SET);
+}
+return (0);
+}

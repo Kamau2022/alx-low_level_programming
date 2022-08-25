@@ -14,8 +14,8 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd;
-char buffer[100000];
+int fd, sz;
+char *buffer = (char *) malloc(letters * sizeof(char));
 fd = open("filename", O_RDWR);
 if (filename == NULL)
 	return (0);
@@ -23,11 +23,11 @@ if (fd == -1)
 	return (0);
 if (fd != -1)
 {
-letters = lseek(fd, 0, SEEK_END);
-lseek(fd, 0, SEEK_SET);
-read(fd, buffer, letters);
-buffer[letters] = '\0';
 write(fd, filename, letters);
+lseek(fd, 0, SEEK_SET);
+sz = read(fd, buffer, letters);
+buffer [sz] = '\0';
+return (sz);
 close(fd);
 }
 return (0);

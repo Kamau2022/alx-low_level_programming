@@ -14,20 +14,20 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd, sz;
-char *buffer = (char *) malloc(letters * sizeof(char));
-fd = open("filename", O_RDWR);
+int fd;
+int sz, kz;
+char *buffer;
+buffer = malloc(letters * sizeof(char));
+fd = open(filename, O_RDONLY);
 if (filename == NULL)
 	return (0);
 if (fd == -1)
 	return (0);
 if (fd != -1)
 {
-write(fd, filename, letters);
-lseek(fd, 0, SEEK_SET);
 sz = read(fd, buffer, letters);
-buffer [sz] = '\0';
-return (sz);
+kz = write(STDOUT_FILENO, buffer, sz);
+return (kz);
 close(fd);
 }
 return (0);

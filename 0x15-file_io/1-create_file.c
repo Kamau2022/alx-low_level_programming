@@ -25,7 +25,7 @@ if (fd == -1)
 }
 if (text_content == NULL)
 {
-kz = creat(filename, O_WRONLY);
+kz = open(filename, O_WRONLY | O_CREAT, 0600);
 }
 if (kz == -1)
 {

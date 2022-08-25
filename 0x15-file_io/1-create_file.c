@@ -18,7 +18,7 @@ int fd;
 int i, sz;
 if (filename == NULL)
 	return (-1);
-fd = open(filename ,O_CREAT | O_TRUNC | O_WRONLY, 0600);
+fd = open(filename, O_WRONLY | O_CREATE | O_TRUNC);
 if (fd == -1)
 {
 	return (-1);

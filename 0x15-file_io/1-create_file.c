@@ -22,6 +22,7 @@ fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (fd == -1)
 {
 	return (-1);
+	return (1);
 }
 if (text_content == NULL)
 {
@@ -35,7 +36,6 @@ else if (kz != -1)
 {
 return (1);
 }
-else if (text_content != NULL && filename != NULL)
 for (i = 0; text_content[i]; i++)
 {
 sz = write(fd, text_content, i);

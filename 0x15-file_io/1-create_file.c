@@ -28,7 +28,7 @@ if (text_content == NULL)
 close(fd);
 return (1);
 }
-for (i = 0; text_content[i] == '\0'; i++)
+for (i = 0; text_content[i]; i++)
 ;
 sz = write(fd, text_content, i);
 close(fd);

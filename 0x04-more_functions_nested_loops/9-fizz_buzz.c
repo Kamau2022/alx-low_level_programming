@@ -22,7 +22,6 @@ printf("FizzBuzz ");
 else
 printf("%d ", i);
 }
-printf("\b\b");
-printf("\n");
+printf("\b\n");
 return (0);
 }

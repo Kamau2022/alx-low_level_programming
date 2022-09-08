@@ -14,8 +14,9 @@ int i, len, k, n;
 
 i = 0;
 len = strlen(str);
-k = len/2;
-n = (len - 1)/2;
+k = len / 2;
+n = (len - 1) / 2;
+
 for (i = 0; i < 1; i++)
 {
 for (i = 0; i < k; i++)

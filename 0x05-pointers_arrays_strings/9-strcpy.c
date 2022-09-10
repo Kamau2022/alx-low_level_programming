@@ -5,7 +5,7 @@
 *_strcpy - copies a string pointed by src including
 *null terminating byte to buffer pointed by dest
 *@dest: pointer to the destination array where content is to be copied
-*@: string which will be copied
+*@src: string which will be copied
 *Return: pointer to dest
 */
 

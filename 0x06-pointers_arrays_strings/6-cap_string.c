@@ -17,7 +17,7 @@ if (i == 0 &&  (str[i] >= 'a' && str[i] <= 'z'))
 str[i] = str[i] - 32;
 continue;
 }
-while ((str[i] == ' ' || str[i] == '\n' || str[i] == '.' || str[i] == '\t'))
+while   (str[i] == ' ' || str[i] == '\n' || str[i] == '.' || str[i] == '\t' ||str[i] == '!')
 {
 if (str[i] == '\t')
 str[i] = ' ';

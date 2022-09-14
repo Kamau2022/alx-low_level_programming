@@ -3,14 +3,16 @@
 
 /**
 * _strspn - gets the length of a prefix substring
-*@s - an array whose length is determined
-*@accept: an array whose bytes are compared with s
-*Return: length of s
+*@s:segment to return bytes from
+*@accept: the bytes to include
+*Return:number of bytes in the initial segment of s
+*which consist only of bytes from accept
 */
 
 unsigned int _strspn(char *s, char *accept)
 {
 int l;
+
 l = strspn(s, accept);
 return (l);
 }

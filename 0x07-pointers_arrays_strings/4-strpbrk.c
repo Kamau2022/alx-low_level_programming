@@ -12,11 +12,9 @@
 char *_strpbrk(char *s, char *accept)
 {
 int i;
-int j;
 int l = strlen(accept);
-int k = strlen(s);
 
-for (j = 0; j <= k; j++)
+while (*s)
 {
 for (i = 0; i <= l; ++i)
 {

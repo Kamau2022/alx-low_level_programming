@@ -11,7 +11,6 @@
 void times_table(void)
 {
 	int n, j, p, s, i;
-	
 
 	for (i = 0; i < 10; i++)
 	{
@@ -21,7 +20,6 @@ void times_table(void)
 		for (j = 1; j < 9; j++)
 		{
 			n = s * j;
-		
 			if (n + i >= 10)
 			{
 			printf("%d, ", n);
@@ -35,6 +33,5 @@ void times_table(void)
 		printf("%d", p);
 		printf("\n");
 	}
-	return;
-}
+	}
 

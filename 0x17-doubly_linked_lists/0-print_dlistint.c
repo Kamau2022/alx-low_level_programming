@@ -16,7 +16,7 @@ const dlistint_t *temp;
 temp = h;
 while (temp)
 {
-printf("%d", temp->n);
+printf("%d\n", temp->n);
 temp = temp->next;
 nodes++;
 }

@@ -3,7 +3,7 @@
 /**
 *add_dnodeint -  a function that adds a new node at
 *the beginning of a dlistint_t list
-*@head: head of doubly linked list
+*@head: a pointer to the head of doubly linked list
 *@n: data of the doubly linked list
 *Return: the address of the new element, or NULL if it failed
 */
@@ -19,10 +19,10 @@ return (NULL);
 new->n = n;
 new->next = *head;
 new->prev = NULL;
-/*if (*head != NULL)*/
-/*{*/
-/*(*head)->prev = new;*/
-/*}*/
+if (*head != NULL)
+{
+(*head)->prev = new;
+}
 *head = new;
 return (new);
 }

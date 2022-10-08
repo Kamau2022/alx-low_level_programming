@@ -34,7 +34,7 @@ else
 *head = NULL;
 return (1);
 }
-if (*head == NULL)
+if (!(*head) || !head)
 {
 return(-1);
 }
@@ -56,8 +56,9 @@ return(1);
 temp->next = new->next;
 free(new);
 new->prev = temp;
-}
 return(1);
+}
+return(-1);
 }
 
 

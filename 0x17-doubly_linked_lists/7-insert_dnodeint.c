@@ -65,6 +65,12 @@ new->next = (*h);
 *h = new;
 new->n = n;
 }
+if (*h == NULL)
+{
+new->next = NULL;
+new->prev = NULL;
+new->n = n;
+}
 if (idx == length)
 {
 new->next = NULL;

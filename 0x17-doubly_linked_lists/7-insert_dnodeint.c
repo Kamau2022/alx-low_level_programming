@@ -70,6 +70,7 @@ if (*h == NULL)
 new->next = NULL;
 new->prev = NULL;
 new->n = n;
+*h = new;
 }
 if (idx == length)
 {

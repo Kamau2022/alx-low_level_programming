@@ -57,7 +57,7 @@ dlistint_t *temp = *h, *new, *next_node = *h;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL || idx > length)
 return (NULL);
-if (idx == 0)
+if (idx == 0 && *h != NULL)
 {
 new->prev = NULL;
 new->next = (*h);

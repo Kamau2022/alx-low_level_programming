@@ -55,7 +55,7 @@ size_t length = dlistint_len(*h);
 dlistint_t *tail = get_dnodeint_at_index(*h, length - 1);
 dlistint_t *temp = *h, *new, *next_node = *h;
 new = malloc(sizeof(dlistint_t));
-if (new == NULL && idx > length)
+if (new == NULL || idx > length)
 return (NULL);
 if (idx == 0 && *h != NULL)
 {

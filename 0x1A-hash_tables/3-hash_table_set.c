@@ -12,13 +12,16 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-hash_node_t *node;
+hash_node_t *node, *temp, *newnode;
 unsigned long int index, k;
 node = malloc(sizeof(hash_node_t));
 node->key = strdup(key);
 node->value = strdup(value);
 node->next = NULL;
-
+if (node == NULL)
+{
+return (0);
+}
 k = hash_djb2((unsigned char*)key);
 
 index = k % ht->size;
@@ -32,12 +35,16 @@ strcpy(ht->array[index]->value, value);
 }
 else
 {
-hash_node_t *temp = ht->array[index];
-while (temp->next)
+temp = node;
+while (temp->next->next)
 {
 temp = temp->next;
 }
 temp->next = node;
 }
+newnode = node;
+newnode->key = strdup(key);
+newnode->value = strdup(value);
+newnode->next = NULL;
 return (1);
 }

@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 /**
 *new_dog - a function that creates a new dog
 *@:name: name of the dog
@@ -24,9 +25,9 @@ return (NULL);
 }
 if (dog != NULL)
 {
-dog->name = name;
+dog->name = strdup(name);
 dog->age = age;
-dog->owner = owner;
+dog->owner = strdup(owner);
 }
 return dog;
 free(dog);

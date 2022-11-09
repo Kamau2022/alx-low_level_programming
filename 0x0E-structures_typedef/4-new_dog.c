@@ -21,14 +21,14 @@ char *owner;
 dog_t *dog = malloc(sizeof(struct new_dog));
 if (dog == NULL)
 {
-free(dog->name);
-free(dog->owner);
+return (NULL);
 }
 if (dog != NULL)
 {
-dog->name = strdup(name);
+dog->name = name;
 dog->age = age;
-dog->owner = strdup(owner);
+dog->owner = owner;
 }
 return dog;
+free (dog);
 }

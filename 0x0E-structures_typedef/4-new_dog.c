@@ -22,7 +22,6 @@ dog_t *dog = malloc(sizeof(struct new_dog));
 if (dog == NULL)
 {
 free(dog);
-return (NULL);
 }
 if (dog != NULL)
 {

@@ -21,7 +21,8 @@ char *owner;
 dog_t *dog = malloc(sizeof(struct new_dog));
 if (dog == NULL)
 {
-free(dog);
+free(dog->name);
+free(dog->owner);
 }
 if (dog != NULL)
 {

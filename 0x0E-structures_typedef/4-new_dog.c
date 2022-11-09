@@ -22,8 +22,12 @@ if (dog == NULL)
 {
 return (NULL);
 }
+if (dog != NULL)
+{
 dog->name = name;
 dog->age = age;
 dog->owner = owner;
+}
 return dog;
+free(dog);
 }

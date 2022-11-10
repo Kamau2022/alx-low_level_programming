@@ -17,45 +17,29 @@ int i, k = 0;
 
 if (name == NULL || owner == NULL)
 return NULL;
-/*while (name[len_name])
-{
-len_name++;
-}
-while (owner[len_owner])
-{
-len_owner++;
-}*/
-cpy_name = malloc(sizeof(char));
-if (cpy_name == NULL)
-	return (NULL);
-while (k <= 0)
-{
-for (i = 0; name[i]; i++)
-{
-cpy_name[i] = name[i];
-}
-cpy_name[i] = '\0';
-k++;
-}
-cpy_owner = malloc(sizeof(char));
-if (cpy_owner == NULL)
-{
-return (NULL);
-}
-while (k <= 0)
-{
-for (i = 0; owner[i]; i++)
-{
-cpy_owner[i] = owner[i];
-}
-k++;
-cpy_owner[i] = '\0';
-}
+
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 {
 return (NULL);
 }
+cpy_name = malloc(sizeof(char));
+if (cpy_name == NULL)
+	return (NULL);
+for (i = 0; name[i]; i++)
+cpy_name[i] = name[i];
+cpy_name[i] = '\0';
+k++;
+
+cpy_owner = malloc(sizeof(char));
+if (cpy_owner == NULL)
+{
+return (NULL);
+}
+for (i = 0; owner[i]; i++)
+cpy_owner[i] = owner[i];
+cpy_owner[i] = '\0';
+
 dog->name = cpy_name;
 dog->age = age;
 dog->owner = cpy_owner;

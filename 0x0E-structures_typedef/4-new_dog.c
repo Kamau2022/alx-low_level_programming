@@ -40,8 +40,8 @@ for (i = 0; owner[i]; i++)
 cpy_owner[i] = owner[i];
 cpy_owner[i] = '\0';
 
-dog->name = cpy_name;
+dog->name = strdup(name);
 dog->age = age;
-dog->owner = cpy_owner;
+dog->owner = strdup(owner);
 return (dog);
 }

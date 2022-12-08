@@ -9,7 +9,7 @@ $(NAME):$(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) $(NAME) $(OBJ)
+	$(RM) $(NAME) *~
 fclean: clean
 	$(RM) $(NAME)
 oclean:

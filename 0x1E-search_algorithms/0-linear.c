@@ -20,7 +20,7 @@ if (array[i] == value)
 {
 return (i);
 }
-if (k == NULL)
+if (k == NULL || size <= 0)
 return (-1);
 }
 return (-1);
